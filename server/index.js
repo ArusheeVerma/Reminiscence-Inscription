@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({limit: "30mb", extended:"true"}));
 app.use(cors());
 app.use('/posts' , postRoutes);
 
-const CONNECTION_URL='mongodb+srv://MongoAru:MongoAru123@cluster0.yuhlvtv.mongodb.net/?retryWrites=true&w=majority';
+
 const PORT = process.env.PORT || 5000;//heroku will automatically populate the port
 
 mongoose.connect(CONNECTION_URL,{useNewUrlParser:true, useUnifiedTopology: true})
